@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "cleanstall": "rm -fr yarn.lock node_modules ios/Podfile.lock ios/Pods ios/build ~/Library/Developer/Xcode/DerivedData android/.gradle android/build android/app/build android/app/.cxx && yarn install && rm node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/OnLoad.cpp",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
